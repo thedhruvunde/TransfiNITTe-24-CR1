@@ -5,6 +5,8 @@ import time
 import threading
 from tkcalendar import DateEntry  # Import DateEntry for date selection
 
+openai.api_key = 'ApI_KEY'
+
 def get_gpt_response(prompt):
     try:
         response = openai.ChatCompletion.create(
